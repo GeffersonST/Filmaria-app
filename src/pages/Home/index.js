@@ -11,7 +11,9 @@ class Home extends Component {
   componentDidMount() {
     this.loadFilmes();
   }
-  loadFilmes() {}
+  loadFilmes() {
+    // URL da API https://sujeitoprogramador.com/r-api/?api=filmes/
+  }
   render() {
     return <div></div>;
   }
