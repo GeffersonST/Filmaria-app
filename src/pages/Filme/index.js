@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./filme-info.css";
 class Filme extends Component {
   constructor(props) {
     super(props);
@@ -19,10 +20,10 @@ class Filme extends Component {
 
   render() {
     return (
-      <div>
+      <div className="filme-info">
         <h1> {this.state.filme.nome}</h1>
         <img src={this.state.filme.foto} alt="" />
-        <h3>Sinopse</h3>
+        {this.state.filme.length !== 0 && <h3>Sinopse</h3>}
         {this.state.filme.sinopse}
       </div>
     );
