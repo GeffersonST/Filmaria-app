@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./home.css";
 
 class Home extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class Home extends Component {
               <article key={filme.id} className="filme">
                 <strong>{filme.nome}</strong>
                 <img src={filme.foto} alt="Capa" />
-                <Link to="/">Acessar</Link>
+                <Link to={`/filme/${filme.id}`}>Acessar</Link>
               </article>
             );
           })}
